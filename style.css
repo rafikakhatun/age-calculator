@@ -71,3 +71,14 @@
   filter: invert(0.1); 
   cursor: pointer;
 }
+
+#result{
+    font-size: 22px;
+    color: yellow;
+    margin-top: 20px;
+
+}
+
+#result span {
+    color:rgb(240, 240, 140);
+}

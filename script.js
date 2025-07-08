@@ -1,6 +1,8 @@
 let userInput = document.getElementById("date");
 userInput.max = new Date().toISOString().split("T")[0];
 
+let result = document.getElementById("result");
+
 function calculateAge() {
     // Check if date is selected
     if (!userInput.value) {
@@ -45,7 +47,8 @@ function calculateAge() {
     }
 
     // Improved output format
-    console.log(`You are ${y3} years, ${m3} months, and ${d3} days old.`);
+    result.innerHTML = `You are <span>${y3}</span> years, <span>${m3}</span> months, and <span>${d3}</span> days old.`;
+
 
     // ✅ Fixed logic: month + 1 for correct days
     function getDaysInMonth(year, month) {
