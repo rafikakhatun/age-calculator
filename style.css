@@ -66,3 +66,8 @@
     color:#fff;
     cursor: pointer;
 }
+
+.input-box input::-webkit-calendar-picker-indicator {
+  filter: invert(0.1); 
+  cursor: pointer;
+}
